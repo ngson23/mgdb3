@@ -40,11 +40,7 @@ app.use(express.json());
 app.use("/employees", employeeRouter.router);
 
 // #connect to MongoDB Compass by mongoose
-// const username = "thailmph27046";
-// const password = "leemanhthai";
-// const cluster = "mycluster";
-// const dbName = "CP17301";
-// const uri = `mongodb+srv://${username}:${password}@${cluster}.myjppwj.mongodb.net/${dbName}`;
+
 const uri = 'mongodb+srv://sonnvph20319:MyIo2I4FdG2IkFtx@ss.meuyerx.mongodb.net/test';
 mongoose.connect(uri);
 const db = mongoose.connection;
